@@ -2,11 +2,17 @@
 <html>
     <head>
         <title>@ViewData["Title"]</title>
+        <link rel="stylesheet" href="~/css/site.css" />
     </head>
     <body>
         <header>
             <h1>Welcome!</h1>
         </header>
+        <nav>
+            <a asp-controller="Home" asp-action="Index">Home Page</a> <br />
+            <a asp-controller="Home" asp-action="About">About Page</a> <br />
+            <a asp-controller="Home" asp-action="Joke">Joke Page</a>
+        </nav>
         <main>
             @RenderBody()
         </main>
